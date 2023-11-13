@@ -1,0 +1,13 @@
+Alumno
+- nombre: String
+- materiasAprobadas: List<Materia>
++ agregarMateriaAprobada(materia: Materia): void
+
+Materia
+- nombre: String
+- correlativas: List<Materia>
+
+Inscripcion
+- alumno: Alumno
+- materia: Materia
++ aprobada(): boolean
